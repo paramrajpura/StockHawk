@@ -3,9 +3,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/DailyChart"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/graph_desc"/>
+        android:orientation="vertical">
+        <com.github.mikephil.charting.charts.CandleStickChart
+            android:id="@+id/DailyChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@string/graph_desc"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/monthChart"
+                android:contentDescription="@string/month_button_desc"
+                android:text="@string/month_button_text" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sixMonthChart"
+                android:contentDescription="@string/six_month_button_desc"
+                android:text="@string/six_month_button_text"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/yearChart"
+                android:contentDescription="@string/year_button_desc"
+                android:text="@string/year_button_text"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 </FrameLayout>

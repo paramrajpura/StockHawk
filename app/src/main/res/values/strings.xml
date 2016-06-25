@@ -8,7 +8,14 @@
     <string name="graph_desc">Daily Chart</string>
     <string name="saved_stock_toast">This stock is already saved!</string>
     <string name="add_quote_title">Add Stock</string>
-    <string name="desc_graph">Daily Closing Price over last month</string>
+    <string name="desc_graph">Daily CandleStick Chart</string>
     <string name="add_button_desc">Add a stock</string>
     <string name="edit_text_desc">Enter Quote Symbol to add</string>
+    <string name="month_button_desc">Daily Chart for last month</string>
+    <string name="six_month_button_desc">Daily Chart for last 6 months</string>
+    <string name="year_button_desc">Daily Chart for last year</string>
+    <string name="month_button_text">1 Month</string>
+    <string name="six_month_button_text">6 Months</string>
+    <string name="year_button_text">12 Months</string>
+
 </resources>
